@@ -1,6 +1,9 @@
 package problem.easy;
 
+import java.util.Arrays;
 import java.util.Map;
+import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 public class Problem19 {
 
@@ -13,6 +16,12 @@ public class Problem19 {
      */
     public static Map<String, Integer> createTreeMapFromStream(String[] strings) {
         // 여기에 코드 작성
-        return null;
+        return Arrays.stream(strings)
+                .collect(Collectors.toMap(
+                        v -> v,
+                        String::length,
+                        (oldValue, newValue) -> oldValue,
+                        TreeMap::new
+                ));
     }
 }

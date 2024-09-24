@@ -1,6 +1,9 @@
 package problem.easy;
 
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Problem20 {
 
@@ -13,6 +16,13 @@ public class Problem20 {
      */
     public static Map<Integer, Integer> createLinkedHashMapFromStream(int[] numbers) {
         // 여기에 코드 작성
-        return null;
+        return IntStream.of(numbers)
+                .boxed()
+                .collect(Collectors.toMap(
+                        v -> v,
+                        v -> v * v,
+                        (oldValue, newValue) -> oldValue,
+                        LinkedHashMap::new
+                ));
     }
 }
