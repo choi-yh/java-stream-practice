@@ -13,7 +13,7 @@ public class Problem41 {
      * @return 'c'로 시작하는 문자열의 개수와 평균 길이를 포함하는 SimpleEntry (개수, 평균 길이)
      */
     public static SimpleEntry<Long, Double> countAndAverageLengthOfStringsStartingWithC(List<String> strings) {
-        // 여기에 코드 작성
+        // TODO: 여기에 코드 작성
         return null;
     }
 }

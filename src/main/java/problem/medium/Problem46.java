@@ -12,7 +12,7 @@ public class Problem46 {
      * @return 각 숫자의 출현 빈도를 나타내는 Map
      */
     public static Map<Integer, Long> frequencyOfNumbers(List<Integer> numbers) {
-        // 여기에 코드 작성
+        // TODO: 여기에 코드 작성
         return null;
     }
 }

@@ -1,9 +1,10 @@
 package problem.medium;
 
-import java.util.List;
 import problem.medium.resources.Customer2;
 import problem.medium.resources.Employee;
 import problem.medium.resources.Product;
+
+import java.util.List;
 
 public class Problem60 {
 
@@ -20,7 +21,7 @@ public class Problem60 {
     public static double calculateTotalPriceOfElectronicsOrderedByITEmployees(List<Customer2> customers,
                                                                               List<Employee> employees,
                                                                               List<Product> products) {
-        // 여기에 코드 작성
+        // TODO: 여기에 코드 작성
         return 0.0;
     }
 }

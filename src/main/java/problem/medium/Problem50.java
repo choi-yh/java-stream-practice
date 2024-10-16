@@ -12,7 +12,7 @@ public class Problem50 {
      * @return 합이 10을 초과하는 최초의 연속된 부분 리스트
      */
     public static List<Integer> findFirstSublistWithSumOverTen(List<Integer> numbers) {
-        // 여기에 코드 작성
+        // TODO: 여기에 코드 작성
         return null;
     }
 }

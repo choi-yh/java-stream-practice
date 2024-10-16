@@ -1,6 +1,7 @@
 package problem.medium;
 
 import java.util.List;
+import java.util.Locale;
 
 public class Problem49 {
 
@@ -13,6 +14,8 @@ public class Problem49 {
      */
     public static List<String> capitalizeFirstLetter(List<String> strings) {
         // 여기에 코드 작성
-        return null;
+        return strings.stream()
+                .map(s -> s.substring(0, 1).toUpperCase(Locale.ROOT) + s.substring(1).toLowerCase())
+                .toList();
     }
 }

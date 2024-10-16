@@ -1,7 +1,8 @@
 package problem.medium;
 
-import java.util.List;
 import problem.medium.resources.Order;
+
+import java.util.List;
 
 public class Problem57 {
 
@@ -13,6 +14,8 @@ public class Problem57 {
      */
     public static List<Order> findOrdersWithCoffee(List<Order> orders) {
         // 여기에 코드 작성
-        return null;
+        return orders.stream()
+                .filter(o -> o.getProduct().equals("Coffee"))
+                .toList();
     }
 }

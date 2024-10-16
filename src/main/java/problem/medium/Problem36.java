@@ -12,7 +12,7 @@ public class Problem36 {
      * @return 연속된 3개의 숫자가 모두 짝수인 첫 번째 부분의 리스트
      */
     public static List<Integer> findFirstTripleEvenSequence(List<Integer> numbers) {
-        // 여기에 코드 작성
+        // TODO: 여기에 코드 작성
         return null;
     }
 }

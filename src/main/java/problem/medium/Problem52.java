@@ -1,7 +1,8 @@
 package problem.medium;
 
-import java.util.List;
 import problem.medium.resources.Product;
+
+import java.util.List;
 
 public class Problem52 {
 
@@ -13,6 +14,9 @@ public class Problem52 {
      */
     public static List<String> getProductNamesUnder20Dollars(List<Product> products) {
         // 여기에 코드 작성
-        return null;
+        return products.stream()
+                .filter(p -> p.getPrice() <= 20)
+                .map(Product::getName)
+                .toList();
     }
 }

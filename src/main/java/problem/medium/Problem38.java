@@ -13,6 +13,11 @@ public class Problem38 {
      */
     public static double averageLengthOfStringsStartingWithB(List<String> strings) {
         // 여기에 코드 작성
-        return 0;
+        return strings.stream()
+                .filter(s -> s.startsWith("b"))
+                .map(String::length)
+                .mapToInt(Integer::intValue)
+                .average()
+                .orElse(0);
     }
 }
